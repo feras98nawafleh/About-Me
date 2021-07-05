@@ -1,6 +1,7 @@
 'use strict';
 let userName = prompt('Welcome! what\'s your name?');
 alert(`Hello ${userName}, let's play the guessing game`);
+alert('please reply with yes/y or no/n')
 
 
 let guessedAge = prompt('I\'m I older than 20 years old?');
