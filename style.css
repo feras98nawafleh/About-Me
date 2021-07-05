@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    background-color: rgba(12, 138, 211, 0.075);
+}
+main{
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+h1, p{
+    text-align: center;
+}
+h1{
+    font-size: 80px;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+section{
+    padding: 20px;
+    background-color: aqua;
+}
+li{
+    font-weight: bolder;
+}
