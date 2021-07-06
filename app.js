@@ -19,7 +19,6 @@ let guessedDrink = prompt('is coffee my favorite drink?');
 if(guessedDrink.toLowerCase() === 'yes' || guessedDrink.toLowerCase() === 'y'){
   alert('WRONG! i\'d rather nescafe');
   // console.log('wrong');
-
 } else {
   alert('you\'re right! coffee isn\'t my favorite');
   // console.log('right');
@@ -56,4 +55,35 @@ if(guessedDish.toLowerCase() === 'yes' || guessedDish.toLowerCase() === 'y'){
   // console.log('wrong');
 }
 
+let randomNumber = Math.floor(Math.random() * 10) + 1;
+for(let i = 4 ; i > 0 ; i--) {
+  alert(`start guessing a random number, ${i} attempts left`);
+  let guessedNumber = prompt('enter your guessing');
+  if(parseInt(guessedNumber) === randomNumber) {
+    alert('CORRECT! you guessed it right');
+    mark++;
+    break;
+  }
+  if(guessedNumber > randomNumber)
+    alert('too high!');
+  if(guessedNumber < randomNumber)
+    alert('too low!');
+}
+alert(`the number was ${randomNumber}`);
+
+let commonPL = ['javascript', 'python', 'java', 'C#', 'C++', 'C', 'PHP', 'ruby'];
+for(let i = 6 ; i > 0 ; i--) {
+  let flag = false;
+  alert(`start guessing a random programming language, ${i} attempts left`);
+  let guessedPL = prompt('enter your guessing');
+  for(let i = 0; i < commonPL.length; i++)
+    if(guessedPL === commonPL[i]) {
+      alert('CORRECT! you guessed it right');
+      mark++;
+      flag = true;
+      break;
+    }
+  if(flag)
+    break;
+}
 alert(`you're mark: ${mark}, good job ${userName}`);
