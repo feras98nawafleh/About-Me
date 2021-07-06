@@ -86,4 +86,5 @@ for(let i = 6 ; i > 0 ; i--) {
   if(flag)
     break;
 }
+alert(`here's the correct answers: ${commonPL}`);
 alert(`you're mark: ${mark}, good job ${userName}`);
