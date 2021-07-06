@@ -56,4 +56,4 @@ if(guessedDish.toLowerCase() == 'yes' || guessedDish.toLowerCase() == 'y'){
     // console.log('wrong');
 }
 
-alert(`you're mark: ${mark}, good job ${userName}`)
+alert(`you're mark: ${mark}, good job ${userName}`);
