@@ -16,7 +16,7 @@ function guessedAge() {
     // console.log('wrong');
   }
 }
-// function guesseedDrink(){
+ function guesseedDrink(){
 let guessedDrink = prompt('is coffee my favorite drink?');
 if (guessedDrink.toLowerCase() === 'yes' || guessedDrink.toLowerCase() === 'y') {
   alert('WRONG! i\'d rather nescafe');
@@ -26,7 +26,7 @@ if (guessedDrink.toLowerCase() === 'yes' || guessedDrink.toLowerCase() === 'y') 
   // console.log('right');
   mark++;
 }
-// }
+ }
 
 // function guessedStatus(){
 let guessedStatus = prompt('I\'m I employed these days?');
