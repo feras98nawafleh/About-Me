@@ -28,7 +28,7 @@ if (guessedDrink.toLowerCase() === 'yes' || guessedDrink.toLowerCase() === 'y') 
 }
  }
 
-// function guessedStatus(){
+function guessedStatus(){
 let guessedStatus = prompt('I\'m I employed these days?');
 if (guessedStatus.toLowerCase() === 'yes' || guessedStatus.toLowerCase() === 'y') {
   alert('WRONG! i\'m taking a bootcamp with ASAC');
@@ -38,7 +38,7 @@ if (guessedStatus.toLowerCase() === 'yes' || guessedStatus.toLowerCase() === 'y'
   // console.log('right');
   mark++;
 }
-// }
+}
 
 let guessedMovie = prompt('is the godfather my favorite movie?');
 if (guessedMovie.toLowerCase() === 'yes' || guessedMovie.toLowerCase() === 'y') {
