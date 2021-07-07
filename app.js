@@ -5,18 +5,20 @@ alert('please reply with yes/y or no/n');
 
 let mark = 0;
 
-let guessedAge = prompt('I\'m I older than 20 years old?');
-if(guessedAge.toLowerCase() === 'yes' || guessedAge.toLowerCase() === 'y'){
-  alert('you\'re right, actually i\'m 23 years old');
-  // console.log('right');
-  mark++;
-} else {
-  alert('sorry! you\'re wrong');
-  // console.log('wrong');
+function guessedAge() {
+  let guessedAge = prompt('I\'m I older than 20 years old?');
+  if (guessedAge.toLowerCase() === 'yes' || guessedAge.toLowerCase() === 'y') {
+    alert('you\'re right, actually i\'m 23 years old');
+    // console.log('right');
+    mark++;
+  } else {
+    alert('sorry! you\'re wrong');
+    // console.log('wrong');
+  }
 }
-
+// function guesseedDrink(){
 let guessedDrink = prompt('is coffee my favorite drink?');
-if(guessedDrink.toLowerCase() === 'yes' || guessedDrink.toLowerCase() === 'y'){
+if (guessedDrink.toLowerCase() === 'yes' || guessedDrink.toLowerCase() === 'y') {
   alert('WRONG! i\'d rather nescafe');
   // console.log('wrong');
 } else {
@@ -24,9 +26,11 @@ if(guessedDrink.toLowerCase() === 'yes' || guessedDrink.toLowerCase() === 'y'){
   // console.log('right');
   mark++;
 }
+// }
 
+// function guessedStatus(){
 let guessedStatus = prompt('I\'m I employed these days?');
-if(guessedStatus.toLowerCase() === 'yes' || guessedStatus.toLowerCase() === 'y'){
+if (guessedStatus.toLowerCase() === 'yes' || guessedStatus.toLowerCase() === 'y') {
   alert('WRONG! i\'m taking a bootcamp with ASAC');
   // console.log('wrong');
 } else {
@@ -34,9 +38,10 @@ if(guessedStatus.toLowerCase() === 'yes' || guessedStatus.toLowerCase() === 'y')
   // console.log('right');
   mark++;
 }
+// }
 
 let guessedMovie = prompt('is the godfather my favorite movie?');
-if(guessedMovie.toLowerCase() === 'yes' || guessedMovie.toLowerCase() === 'y'){
+if (guessedMovie.toLowerCase() === 'yes' || guessedMovie.toLowerCase() === 'y') {
   alert('Correct! what else could be');
   // console.log('right');
   mark++;
@@ -46,7 +51,7 @@ if(guessedMovie.toLowerCase() === 'yes' || guessedMovie.toLowerCase() === 'y'){
 }
 
 let guessedDish = prompt('is mansaf my favorite dish?');
-if(guessedDish.toLowerCase() === 'yes' || guessedDish.toLowerCase() === 'y'){
+if (guessedDish.toLowerCase() === 'yes' || guessedDish.toLowerCase() === 'y') {
   alert('Correct! what else could be');
   // console.log('right');
   mark++;
@@ -56,34 +61,34 @@ if(guessedDish.toLowerCase() === 'yes' || guessedDish.toLowerCase() === 'y'){
 }
 
 let randomNumber = Math.floor(Math.random() * 10) + 1;
-for(let i = 4 ; i > 0 ; i--) {
+for (let i = 4; i > 0; i--) {
   alert(`start guessing a random number, ${i} attempts left`);
   let guessedNumber = prompt('enter your guessing');
-  if(parseInt(guessedNumber) === randomNumber) {
+  if (parseInt(guessedNumber) === randomNumber) {
     alert('CORRECT! you guessed it right');
     mark++;
     break;
   }
-  if(guessedNumber > randomNumber)
+  if (guessedNumber > randomNumber)
     alert('too high!');
-  if(guessedNumber < randomNumber)
+  if (guessedNumber < randomNumber)
     alert('too low!');
 }
 alert(`the number was ${randomNumber}`);
 
 let commonPL = ['javascript', 'python', 'java', 'C#', 'C++', 'C', 'PHP', 'ruby'];
-for(let i = 6 ; i > 0 ; i--) {
+for (let i = 6; i > 0; i--) {
   let flag = false;
   alert(`start guessing a random programming language, ${i} attempts left`);
   let guessedPL = prompt('enter your guessing');
-  for(let i = 0; i < commonPL.length; i++)
-    if(guessedPL === commonPL[i]) {
+  for (let i = 0; i < commonPL.length; i++)
+    if (guessedPL === commonPL[i]) {
       alert('CORRECT! you guessed it right');
       mark++;
       flag = true;
       break;
     }
-  if(flag)
+  if (flag)
     break;
 }
 alert(`here's the correct answers: ${commonPL}`);
