@@ -81,6 +81,7 @@ for (let i = 4; i > 0; i--) {
 alert(`the number was ${randomNumber}`);
 }
 
+function commonPL{
 let commonPL = ['javascript', 'python', 'java', 'C#', 'C++', 'C', 'PHP', 'ruby'];
 for (let i = 6; i > 0; i--) {
   let flag = false;
@@ -95,6 +96,7 @@ for (let i = 6; i > 0; i--) {
     }
   if (flag)
     break;
+}
 }
 alert(`here's the correct answers: ${commonPL}`);
 alert(`you're mark: ${mark}, good job ${userName}`);
