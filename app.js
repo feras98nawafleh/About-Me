@@ -62,6 +62,8 @@ if (guessedDish.toLowerCase() === 'yes' || guessedDish.toLowerCase() === 'y') {
   // console.log('wrong');
 }
 }
+
+function randomNumber{
 let randomNumber = Math.floor(Math.random() * 10) + 1;
 for (let i = 4; i > 0; i--) {
   alert(`start guessing a random number, ${i} attempts left`);
@@ -77,6 +79,7 @@ for (let i = 4; i > 0; i--) {
     alert('too low!');
 }
 alert(`the number was ${randomNumber}`);
+}
 
 let commonPL = ['javascript', 'python', 'java', 'C#', 'C++', 'C', 'PHP', 'ruby'];
 for (let i = 6; i > 0; i--) {
