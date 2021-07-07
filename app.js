@@ -39,7 +39,7 @@ if (guessedStatus.toLowerCase() === 'yes' || guessedStatus.toLowerCase() === 'y'
   mark++;
 }
 }
-
+function guessedMovie{
 let guessedMovie = prompt('is the godfather my favorite movie?');
 if (guessedMovie.toLowerCase() === 'yes' || guessedMovie.toLowerCase() === 'y') {
   alert('Correct! what else could be');
@@ -48,6 +48,7 @@ if (guessedMovie.toLowerCase() === 'yes' || guessedMovie.toLowerCase() === 'y') 
 } else {
   alert('WRONG!');
   // console.log('wrong');
+}
 }
 
 let guessedDish = prompt('is mansaf my favorite dish?');
