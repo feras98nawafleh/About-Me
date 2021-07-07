@@ -51,6 +51,7 @@ if (guessedMovie.toLowerCase() === 'yes' || guessedMovie.toLowerCase() === 'y') 
 }
 }
 
+function guessedDish{
 let guessedDish = prompt('is mansaf my favorite dish?');
 if (guessedDish.toLowerCase() === 'yes' || guessedDish.toLowerCase() === 'y') {
   alert('Correct! what else could be');
@@ -60,7 +61,7 @@ if (guessedDish.toLowerCase() === 'yes' || guessedDish.toLowerCase() === 'y') {
   alert('WRONG! what else could be');
   // console.log('wrong');
 }
-
+}
 let randomNumber = Math.floor(Math.random() * 10) + 1;
 for (let i = 4; i > 0; i--) {
   alert(`start guessing a random number, ${i} attempts left`);
